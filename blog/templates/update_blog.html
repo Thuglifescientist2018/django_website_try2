@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %} Update | {{blog.title}} {% endblock %}
+{% block link_css %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'scss/create_blog.css' %}">
+<!-- the styling is as same as create blog so using same css for this too :)-->
+{% endblock %}
+
+{% block content %}
+<form method="POST" class="container"> {% csrf_token %}
+    {{form.media}}
+    {{form.as_p | safe}}
+    <button type="submit" class="btn btn-secondary mt-3 mb-4">Update</button>
+</form>
+
+{% endblock %}

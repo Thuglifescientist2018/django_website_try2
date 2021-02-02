@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK;AACL,QAAQ,CAAC;EACP,KAAK,EAAE,eAAe;EACtB,OAAO,EAAE,IAAI;EACb,OAAO,EAAE,MAAM;CAChB;;AACD,AAAA,QAAQ,CAAC,EAAE,CAAC;EACV,MAAM,EAAE,MAAM;EACd,WAAW,EAAE,yBAAyB;CACvC;;AACD,AAAA,uBAAuB,CAAC;EACtB,KAAK,EAAE,MAAM;CACd",
+    "sources": [
+        "create_blog.scss"
+    ],
+    "names": [],
+    "file": "create_blog.css"
+}

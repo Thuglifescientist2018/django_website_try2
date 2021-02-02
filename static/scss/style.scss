@@ -1,0 +1,13 @@
+.text-right {
+  text-align: right;
+}
+#home-contents {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#home-contents .card {
+  margin: 2rem 0.75rem;
+}

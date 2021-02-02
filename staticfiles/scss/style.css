@@ -1,0 +1,22 @@
+.text-right {
+  text-align: right;
+}
+
+#home-contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#home-contents .card {
+  margin: 2rem 0.75rem;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,17 @@
+#blog_list h1 ul li a {
+  font-size: 10px !important;
+}
+#blog_lists {
+  font-size: 2rem;
+  list-style: none;
+  font-family: "Monda", sans-serif;
+
+  li {
+    margin: 0.75rem 0;
+    border-radius: 10px;
+  }
+  a {
+    text-decoration: none;
+    font-weight: xx-large;
+  }
+}

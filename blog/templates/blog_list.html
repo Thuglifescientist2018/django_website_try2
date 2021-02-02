@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %} Shashwat Blog List {% endblock %}
+{% load static %}
+
+{% block link_css %}
+<link rel="stylesheet" href="{% static 'scss/blog_list.css' %}">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Monda&display=swap" rel="stylesheet">
+{% endblock %}
+{% block content %}
+<section id="blog-list" class="container">
+    <h1 class="mt-4 mb-5 p-3 bg-dark text-white rounded">
+        Shashwat Dahal Blogs here
+        {% if user.is_authenticated %}
+            <ul class="list-unstyled text-right">
+                <li><a href="create" class="text-white text-decoration-none">Post a new blog</a></li>
+            </ul>
+        {% endif %}
+    </h1>
+    <ul id="blog_lists">
+        {% for blog in blogs %}
+            <li class="p-3 bg-secondary text-center"><a class="text-white" href="read/{{blog.slug}}">{{blog.title}}</a></li>
+        {% endfor %}
+    </ul>
+</section>
+
+{% endblock %}
